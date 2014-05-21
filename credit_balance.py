@@ -15,19 +15,8 @@ def main_program():
     dict_test = {"Organization": "Balance"}
     
     #loop through each client
-    for client in all_clients: 
-	   client_credit = client.credit
-	   credit_list.append(client_credit)
-	   client_name = client.organization
-	   client_name_list.append(client_name)
-    
-    #print client_name_list
-    #print credit_list
-    
     for client in all_clients:
-    	client_name = client.organization
-    	client_credit = client.credit
-    	dict_test[client_name]=client_credit
+    	dict_test[client.organization]=client.credit
     
     print dict_test
     
